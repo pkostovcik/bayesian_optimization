@@ -208,4 +208,4 @@ def REMBO(f, D, d, n_iterations, n_init = 2, rand = None,
                acquisition_func, noise_var, log_info, n_iters_aqui), A]
         
 if __name__ == "__main__":
-    print("Implementation of BO and REMBO is in test.py")
+    print("Simple examples of BO and REMBO are in test.py")
