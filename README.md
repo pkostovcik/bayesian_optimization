@@ -1,6 +1,6 @@
 # Bayesian optimization 
 
-Bayesian Optimization (BO) is global optimization for expensive black-box functions. This is **lightweigth implementation of Bayesian Optimization in python** using *numpy*, *scipy* and *GPy* created for author's [diploma thesis]() (not in english, note that this code is updated). 
+Bayesian Optimization (BO) is global optimization for expensive black-box functions. This is **lightweigth implementation of Bayesian Optimization in python** using *numpy*, *scipy* and *GPy* created for author's [diploma thesis](https://is.cuni.cz/webapps/zzp/detail/185046/) (not in english, note that this code is updated). 
 
 This metohod doesn't optimize objective function directly. Instead of that it creates probabilistic model (Gaussian Process Regression) and uses it to calculate differentiable acquisition function which is cheap. Maximalization of acquisition function is not easy problem, because of multimodality and/or flatness, but it is much easier than direct obtimization of objective function. Maximalization of acqusition functions gives us new point in which we evaluate objective function. We use calculated values and points as data for improving our probabilistic model in next iteration. Numerical optimisation in higher dimensions is still problem even for simpler functions, so we use dimensionality reduction via Random Embeddings.
 
